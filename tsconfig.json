@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+      "target": "es6",
+      "rootDir": "./src",
+      "baseUrl": ".",
+      "module": "ESNext",
+      "moduleResolution": "node",
+      "sourceMap": true,
+      "alwaysStrict": true,
+      "allowJs": false,
+      "noUnusedLocals": false,
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "typeRoots": [
+          "node_modules/@types"
+      ],
+      "jsx": "react",
+      "noUnusedParameters": false,
+  },
+  
+}

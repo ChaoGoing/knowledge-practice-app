@@ -1,0 +1,47 @@
+{
+    "extends": "./../../tsconfig.json",
+    "compilerOptions": {
+        "target": "es6",
+        "rootDir": "./../../",
+        "baseUrl": ".",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "importHelpers": false,
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "alwaysStrict": true,
+        "allowJs": false,
+        "noUnusedLocals": false,
+        "typeRoots": [
+            "../typings",
+            "./typings",
+            "./../../node_modules/@types"
+        ],
+        "paths": {
+            "@utils/*": [
+                "./utils/*"
+            ],
+            "@common/*": [
+                "./../common/*"
+            ],
+            "@constant/*": [
+                "./../constant/*"
+            ],
+        },
+        "composite": true,
+        "skipLibCheck": true,
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "include": [
+        "../typings",
+        "./**/*",
+        "./../common/**/*",
+        "./../constant/**/*"
+    ]
+}
